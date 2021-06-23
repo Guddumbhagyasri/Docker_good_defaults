@@ -11,3 +11,4 @@ for branch in $(git branch -r --merged  | grep -v HEAD | grep -v QA | grep -v QA
                            remote_branch=$(echo ${branch} | sed 's#origin/##' )
                                                                         #git push origin --delete ${remote_branch}
             fi
+          done
